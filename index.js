@@ -43,12 +43,7 @@ async function main() {
 
     console.log(data);
 
-    const dates = data.map((v) =>
-        window
-            .moment(v.time * 1000)
-            .tz("America/Santiago")
-            .format("YYYY/MM/DD HH:mm"),
-    );
+    const dates = data.map((v) => window.moment(v.time * 1000).format("YYYY/MM/DD HH:mm"));
     const prices = data.map((v, i) => ({
         y: v.close?.toFixed(1),
         x: dates[i],
