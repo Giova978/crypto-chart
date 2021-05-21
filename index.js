@@ -103,11 +103,11 @@ async function main() {
                 zoom: {
                     zoom: {
                         enabled: true,
-                        mode: "xy",
+                        mode: "x",
                     },
                     pan: {
                         enabled: true,
-                        mode: "xy",
+                        mode: "x",
                     },
                 },
             },
