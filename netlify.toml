@@ -1,5 +1,4 @@
 [[redirects]]
 from = "/proxy/*"
 to = ":splat"
-status = 200 
 force = true
