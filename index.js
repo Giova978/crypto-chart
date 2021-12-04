@@ -37,7 +37,7 @@ function roll(array, window, minPeriod = window) {
 
 async function main() {
     const { records: data } = await window.yhApi.history("btc-usd", {
-        interval: "90m",
+        interval: "15m",
         range: "1mo",
     });
 
